@@ -1,0 +1,58 @@
+@import "~react-pro-sidebar/dist/scss/styles.scss";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+
+.sidebar {
+  .pro-sidebar {
+    min-height: var(--contentMinHeight);
+    .pro-sidebar-inner {
+      background-color: #1e2833;
+    }
+  }
+  .close_menu {
+    font-size: 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+  }
+  .sidebar_username {
+    text-align: center;
+  }
+}
+
+.profile_page {
+  display: flex;
+}
+.card_body{
+  .card_bg_color {
+    position: relative;
+    .card_absolute_layer{
+        position: absolute;
+        top: 40px;
+        left: 0;
+        right: 0;
+      .profile_logo {
+        border-radius: 50% !important;
+        border: 2px solid #ffffff;
+      }
+    }
+  }
+  .card-body{
+    padding-top: 56px;
+  }
+}
+.my_live_container {
+  display: flex;
+  flex-wrap: wrap;
+  .my_live_products {
+    max-height: 100px !important;
+  }
+}
+.my_bid_card_container {
+  width: 100%;
+}
+
+.my_live_product_card_body {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}

@@ -1,0 +1,18 @@
+.myLiveProducts,
+.follower,
+.following,
+.myBidHistory,
+.myLive {
+    transform: translate3d(0px, 0px, 0px);
+    animation: formShown ease-out 0.5s;
+    @keyframes formShown {
+        0% {
+            opacity: 0;
+            transform: translate3d(-100px, 0px, 0px);
+        }
+        100% {
+            opacity: 1;
+            transform: translate3d(0px, 0px, 0px);
+        }
+    }
+}

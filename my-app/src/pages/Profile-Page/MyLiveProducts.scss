@@ -1,0 +1,9 @@
+@media (max-width: 635px) {
+    .my_live_products_container {
+        width: calc(100vw - 100px) !important;
+        overflow-x: scroll;
+        th {
+            white-space: nowrap;
+        }
+    }
+}

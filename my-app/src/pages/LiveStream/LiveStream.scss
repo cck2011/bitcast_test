@@ -1,0 +1,435 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+
+$largeFontSize: 1.5em;
+$largeFontSize2: 1.2em;
+$smallFontSize: 0.5em;
+
+.LiveStream {
+    max-width: 98.5%;
+    font-family: "Noto Sans TC", sans-serif;
+    .page_btn {
+        padding-left: 0;
+        padding-right: 0;
+        font-size: $smallFontSize;
+    }
+}
+
+.LiveStreamHeader {
+    border-top: solid 1px #dcdcdc;
+    .mainInfo {
+        .title {
+            font-size: $largeFontSize;
+        }
+        .userinfo {
+            position: relative;
+            .profilePic {
+                width: 50px;
+                height: 50px;
+            }
+            .subscribe {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            .viewers {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+        }
+    }
+    .subscribe_btn:focus {
+        box-shadow: none;
+    }
+    .small_font {
+        font-size: $smallFontSize;
+    }
+}
+.LiveStreamControlPanel {
+    .panel_bar {
+        max-height: 200px;
+        overflow: hidden;
+        cursor: pointer;
+        .carousel > div {
+            max-width: 100%;
+        }
+        .carousel {
+            .carousel_card.selected {
+                background-color: #fefef1;
+            }
+            .carousel_card {
+                background-color: #f5f5f5;
+                height: 200px;
+                .carousel_img {
+                    max-width: 15%;
+                    max-height: 90%;
+                }
+
+                .sold {
+                    filter: contrast(20%);
+                }
+
+                .product_info {
+                    padding: 0 0 0 20px;
+                    font-size: $smallFontSize;
+                    .product_name,
+                    .product_price {
+                        margin: 10px 0;
+                        width: 100px;
+                    }
+                }
+            }
+
+            .tns-slider {
+                display: flex;
+            }
+
+            .carousel_btn {
+                position: absolute;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                top: 0;
+                bottom: 0;
+                opacity: 0.1 !important;
+                user-select: none;
+            }
+            .carousel_btn:hover {
+                opacity: 0.5 !important;
+            }
+            .carousel_btn:focus {
+                box-shadow: none;
+            }
+
+            .carousel_btn_left {
+                left: 0px;
+            }
+
+            .carousel_btn_right {
+                right: 0px;
+            }
+
+            .carousel_btn_left:active,
+            .carousel_btn_right:active {
+                opacity: 1 !important;
+            }
+        }
+    }
+}
+
+.LiveStreamBiddingInfo {
+    background-color: #fffafa;
+    .selected_img {
+        max-width: 40%;
+        max-height: 135px;
+        border: solid 3px gray;
+        box-shadow: 5px 5px 20px -4px rgba(0, 0, 0, 0.84);
+    }
+    .info {
+        .row {
+            max-height: 200px;
+            .col {
+                max-height: 200px;
+            }
+        }
+        .start_auction {
+            max-width: 500px;
+        }
+        .start_auction:focus {
+            box-shadow: none;
+        }
+
+        label {
+            max-width: 500px;
+        }
+    }
+    .instant_info {
+        padding: 0 0 0 20px;
+        .current_price {
+            font-size: $largeFontSize;
+            width: fit-content;
+        }
+        .remaining_time {
+            font-size: $largeFontSize2;
+            width: fit-content;
+        }
+        .highest_bid_user {
+            font-size: $smallFontSize;
+            width: fit-content;
+        }
+    }
+
+    .bid_btn_groups {
+        max-width: 450px;
+        .input_duration {
+            font-size: 16px;
+        }
+
+        .unavailable_btn {
+            background-color: #708090 !important;
+            border-color: #708090 !important;
+            cursor: default !important;
+            user-select: none;
+        }
+        .unavailable_btn:focus {
+            box-shadow: none;
+        }
+        button:focus {
+            box-shadow: none;
+        }
+    }
+
+    .livestreamLogin,
+    .livestreamNotSeller,
+    .livestreamEdit {
+        height: 135px;
+        background: radial-gradient(
+            circle,
+            rgba(236, 233, 230, 1) 0%,
+            rgba(255, 255, 255, 1) 100%
+        );
+        font-size: $largeFontSize2;
+    }
+}
+
+.LiveStreamDescription {
+    border: 1px solid #dcdcdc;
+    font-size: $smallFontSize;
+    overflow-y: scroll;
+}
+.LiveStreamDescription::-webkit-scrollbar-track {
+    background-color: #dcdcdc;
+}
+
+.LiveStreamChatRoom {
+    .LiveStreamChatRoomMainBody {
+        border: 1px solid #dcdcdc;
+        background-color: #fffafa;
+
+        .rcs-inner-handle {
+            background-color: #717171;
+        }
+        .chat {
+            position: relative;
+            .head {
+                margin: 0 0 10px 0;
+                font-size: $largeFontSize;
+            }
+            .rcs-outer-container {
+                border: 1px solid #dcdcdc;
+                background-color: #ffffff;
+            }
+            .dummyLayer {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 60px;
+                display: flex;
+                justify-content: center;
+                .scrollToBottom {
+                    user-select: none;
+                    z-index: 10;
+                    -webkit-animation: fade-in-fwd 0.6s
+                        cubic-bezier(0.39, 0.575, 0.565, 1) both;
+                    animation: fade-in-fwd 0.6s
+                        cubic-bezier(0.39, 0.575, 0.565, 1) both;
+                }
+            }
+            .chat_username {
+                font-weight: bold;
+                height: fit-content;
+            }
+            .chat_propic {
+                width: 20px;
+                height: 20px;
+            }
+
+            .footer {
+                margin: 10px 0 0 0;
+                .inputBox {
+                    border: 1px solid #dcdcdc;
+                }
+                .sendBtn {
+                    background-color: transparent;
+                    border: none;
+                    font-size: $largeFontSize;
+                }
+                .sendBtn:after {
+                    border-radius: 50%;
+                    content: "";
+                    position: absolute;
+                    top: 19px;
+                    left: 19px;
+                    width: 38px;
+                    height: 38px;
+                    margin-top: -19px;
+                    margin-left: -19px;
+                    transition: all 0.5s ease-out;
+                }
+
+                .sendBtn:active:after {
+                    background-color: rgba(0, 0, 0, 0.6);
+                    transition: all 0s ease-out;
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                    margin-top: 0px;
+                    margin-left: 0px;
+                }
+            }
+
+            .login_message {
+                font-size: $largeFontSize2;
+            }
+        }
+    }
+    .dragBtn {
+        cursor: row-resize;
+        background-color: #1b2833;
+        color: white;
+        font-size: $smallFontSize;
+        padding: 10px 0;
+        user-select: none;
+    }
+}
+
+.LiveStreamRecommend {
+    a {
+        text-decoration: none;
+    }
+    .recommendAuction {
+        cursor: pointer;
+        .thumbnail {
+            width: 40%;
+        }
+        .info {
+            width: 60%;
+            .title,
+            .username {
+                width: 100%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                color: black;
+            }
+            .title {
+                font-weight: bold;
+            }
+            .username {
+                font-size: $smallFontSize;
+            }
+        }
+    }
+}
+
+.LiveStreamWindow,
+.LiveStreamWindowSeller {
+    .buyer_link {
+        position: relative;
+        .clipboard {
+            background-color: transparent;
+            border: none;
+            font-size: $largeFontSize;
+            cursor: pointer;
+            width: fit-content;
+        }
+        .clipboard:after {
+            border-radius: 50%;
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 238px;
+            width: 40px;
+            height: 40px;
+            margin-top: -19px;
+            margin-left: -19px;
+            transition: all 0.5s ease-out;
+        }
+
+        .clipboard:active:after {
+            background-color: rgba(0, 0, 0, 0.6);
+            transition: all 0s ease-out;
+            opacity: 0;
+            width: 0;
+            height: 0;
+            margin-top: 0px;
+            margin-left: 0px;
+        }
+    }
+    .video_canvas_combine {
+        position: relative;
+        .konvajs-content {
+            position: absolute !important;
+        }
+        .star-button,
+        .heart-button {
+            cursor: pointer;
+            position: absolute;
+            bottom: 100px;
+            right: 15px;
+            background-color: #b5ff7d;
+            color: #0b0c10;
+            padding: 1em 1em;
+            height: 1em;
+            width: 1em;
+            border-radius: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 0px 0px 2px #0b0c10, 0px 0px 0px 6px #b5ff7d;
+        }
+        .heart-button {
+            right: 65px;
+        }
+        .star-button,
+        .star-button__icon,
+        .heart-button,
+        .heart-button__icon {
+            transition: all 0.5s ease-in-out;
+        }
+
+        .star-button:hover,
+        .heart-button:hover {
+            transform: scale(0.9);
+            box-shadow: 0px 0px 0px 2px #0b0c10, 0px 0px 0px 7px #b5ff7d;
+            cursor: pointer;
+        }
+        video {
+            max-height: 50vh;
+        }
+    }
+}
+
+.buyerLink_QRcode {
+    margin: 1.8rem;
+    width: 90%;
+    padding: 25px 10px 25px 10px;
+    background-color: rgba($color: #b9b9b9, $alpha: 0.2);
+    border: transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        font-size: 12px;
+        width: 50%;
+        margin-left: 30px;
+    }
+    span {
+        font-size: 15px;
+        font-weight: 700;
+    }
+    ul {
+        margin-top: 10px;
+    }
+    @media screen and (max-width: 410px) {
+        div {
+            display: none;
+        }
+    }
+    .QRcode_pic {
+        cursor: pointer;
+    }
+}

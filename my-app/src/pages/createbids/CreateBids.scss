@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import "bootstrap/dist/css/bootstrap.min.css";
+.create_bids_container {
+    width: 100%;
+    margin-top: 3%;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    // border: 1px solid #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 300;
+    // font-size: 15px;
+    // color: red;
+    .outline {
+        background-color: rgba($color: #bebebe, $alpha: 0.2);
+
+        // border: 1px solid #000;
+        .header_border {
+            background-color: #41546b;
+            // border: 1px solid black;
+            height: 80px;
+            width: 100%;
+        }
+
+        .input_box {
+            width: 100%;
+            label {
+                margin-top: 25px;
+                margin-bottom: 15px;
+                width: 100%;
+                // padding-right:100px ;
+            }
+        }
+        textarea {
+            width: 98%;
+            height: 200px;
+            // font-family: ‘Noto Sans TC’, sans-serif;
+        }
+    }
+}
+.products_index {
+    font-size: 30px;
+    font-weight: 200;
+}
+.input_textarea {
+    font-size: 20px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 100 !important;
+}
+
+form {
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: auto;
+}
+label {
+    font-size: 20px;
+}
+.input_default {
+    width: 50% !important;
+    background-color: transparent;
+    height: 30px;
+    border: 0px solid transparent;
+    border-bottom: 3px solid lightgrey;
+    font-size: 20px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 100 !important;
+    padding: 1px 2px !important;
+}
+.input_default:focus {
+    // border: 3px solid #555;
+    // background-color: red;
+    border-bottom: 3px solid #1f2833;
+    outline-width: 0;
+    animation: boarder_line ease-in 0.3s;
+    @keyframes boarder_line {
+        0% {
+            border-bottom: 3px solid lightgrey;
+        }
+        100% {
+            border-bottom: 3px solid #1f2833;
+        }
+    }
+}
+
+::-webkit-file-upload-button {
+    background: black;
+    color: white;
+    border: transparent;
+    cursor: pointer;
+    // padding: 1em;
+}
+
+.button_default {
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    // margin-right: 10px;
+    background-color: #41546b;
+    color: #fff;
+    border: 0;
+    box-sizing: border-box;
+    // width: 60vw !important;
+    padding: 15px !important;
+    //     -webkit-transition-duration: 0.4s; /* Safari */
+    //   transition-duration: 0.4s;
+}
+.button_default:hover {
+    background-color: #1f2833;
+    animation: buttonBG ease-in 0.3s;
+    @keyframes buttonBG {
+        0% {
+            background-color: #41546b;
+        }
+        100% {
+            background-color: #1f2833;
+        }
+    }
+}
+.button_default_del {
+    width: 100%;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    // margin-right: 10px;
+    background-color: #d60000;
+    color: #fff;
+    border: 0;
+    box-sizing: border-box;
+    // width: 60vw !important;
+    padding: 15px !important;
+}
+.button_default:active {
+    box-shadow: 0 2px 5px #666;
+    transform: translateY(4px);
+    background-color: #1f2833;
+    animation: buttonActiveBG ease-in 0.3s;
+    animation-fill-mode: forwards;
+    @keyframes buttonActiveBG {
+        0% {
+            color: white;
+            background-color: #1f2833;
+        }
+        100% {
+            color: black;
+            background-color: #ffffff;
+        }
+    }
+}
+
+h1 {
+    font-size: 30px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 700 !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-success {
+    color: green;
+}
+.text-error {
+    display: none;
+    color: red;
+}
+.item_input_container {
+    border-bottom: 1px solid lightgrey;
+    padding-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 0;
+    display: none;
+}
+
+.resize_upload_photo {
+    // margin-top: 20px;
+    max-height: 220px;
+    min-width: 220px;
+    max-width: 30vw;
+    // height: 50vh;
+}
+.test_user {
+    font-size: 30px;
+}
+
+.Datepicker {
+    display: block;
+    background-color: transparent;
+    box-sizing: border-box;
+    width: auto;
+    // border-radius: 4px;
+    border: 0px solid transparent;
+    border-bottom: 3px solid lightgrey;
+    color: black;
+    padding: 5px 3px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-family: "Noto Sans TC", sans-serif;
+    font-weight: 200;
+    outline-width: 0;
+}
+.Datepicker:focus {
+    border-bottom: 3px solid #1f2833;
+    animation: boarder_line ease-in 0.3s;
+    @keyframes boarder_line {
+        0% {
+            border-bottom: 3px solid lightgrey;
+        }
+        100% {
+            border-bottom: 3px solid #1f2833;
+        }
+    }
+}
+.DateIcon {
+    color: grey;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 5;
+    transform: translate3d(-35px, 5px, 0px);
+}
+.react-datepicker__input-container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+.react-datepicker-wrapper {
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    width: 100%;
+}
+
+.files input {
+    cursor: pointer;
+    outline: 0;
+    //   outline: 2px dashed #92b0b3;
+    //   outline: 2px dashed black;
+    border: 2px dashed #92b0b3;
+    border-radius: 15px;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset 0.15s ease-in-out,
+        background-color 0.15s linear;
+    transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+    padding: 85px 0px 85px 20%;
+    text-align: center !important;
+    margin: 0;
+    width: 98% !important;
+}
+.files input:focus {
+    outline: 0;
+    border: 2px dashed #92b0b3;
+    border-radius: 15px;
+    outline-offset: -10px;
+    -webkit-transition: outline-offset 0.15s ease-in-out,
+        background-color 0.15s linear;
+    transition: outline-offset 0.15s ease-in-out, background-color 0.15s linear;
+    border: 1px solid #92b0b3;
+}
+.files {
+    outline: 0;
+    position: relative;
+}
+.files:after {
+    outline: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100px;
+    right: 0;
+    height: 100px;
+    content: "";
+    background-image: url("./assets/pngegg.png");
+    display: block;
+    margin: 0 auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.color input {
+    background-color: #f1f1f1;
+}
+.files:before {
+    outline: 0;
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    pointer-events: none;
+    width: 100%;
+    right: 0px;
+    height: 57px;
+    content: " Click to upload or drag it here. ";
+    display: block;
+    margin: 0 auto;
+    color: #15ba83;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.form_shown {
+    display: block;
+    transform: translate3d(0px, 0px, 0px);
+    animation: formShown ease-out 0.5s;
+    opacity: 1;
+    // animation-delay: 0.3s;
+    @keyframes formShown {
+        0% {
+            opacity: 0;
+            transform: translate3d(-100px, 0px, 0px);
+        }
+        100% {
+            opacity: 1;
+            transform: translate3d(0px, 0px, 0px);
+        }
+    }
+}
+.photo_shown {
+    // display:block;
+    transform: translate3d(0px, 0px, 0px);
+    opacity: 0;
+    animation: photoShown ease-out 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.6s;
+    @keyframes photoShown {
+        0% {
+            opacity: 0;
+            transform: translate3d(50px, 0px, 0px);
+        }
+        100% {
+            opacity: 1;
+            transform: translate3d(10px, 0px, 0px);
+        }
+    }
+}
+.upload_reminder {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 13px;
+    font-size: 500;
+    color: black;
+    font-family: "Noto Sans TC", sans-serif;
+}
+.img_container {
+    margin-top: 10px;
+    box-shadow: 1px 2px 5px rgb(173, 173, 173);
+    opacity: 0;
+    width: 98%;
+    height: 250px;
+    border: transparent;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgba($color: #5e5e5e, $alpha: 0.2);
+    animation: img_container ease-out 0.5s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+    @keyframes img_container {
+        0% {
+            opacity: 0;
+            transform: translate3d(0px, -50px, 0px);
+        }
+        100% {
+            opacity: 1;
+            transform: translate3d(0px, 0px, 0px);
+        }
+    }
+    .file_Info_container {
+        opacity: 0;
+        width: 300px;
+        margin-left: 10%;
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: center;
+        align-items: center;
+        animation: imgInfo_container ease-out 0.5s;
+        animation-fill-mode: forwards;
+        animation-delay: 1s;
+        div {
+            font-weight: 500;
+            font-size: 15px;
+            padding-left: 30px;
+            margin-bottom: 15px;
+            // padding-right: 30px;
+        }
+        @keyframes imgInfo_container {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    }
+    // @media screen and (max-width: 650px) {
+    //     .file_Info_container {
+    //         display: none;
+    //     }
+    // }
+}
+input[type="file"] {
+    text-indent: -120000px;
+}
+
+.category_container {
+    width: 30%;
+    height: 35px;
+    outline: 0;
+    outline-width: 0;
+    // background-color: red;
+}
+
+.react-datepicker__input-container {
+    width: 30%;
+}
+.react-datepicker-wrapper {
+    width: 30%;
+}
+.Alert_container {
+    display: flex;
+    justify-content: space-between;
+    .close-alert {
+        margin-right: 2%;
+        cursor: pointer;
+    }
+}
+
+//hide number input arrow
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

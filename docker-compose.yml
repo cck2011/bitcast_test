@@ -1,0 +1,44 @@
+version: "3"
+
+services:
+    express_backend:
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+            POSTGRES_DB: bidcast
+            POSTGRES_HOST: db
+            FRONTEND_URL: ${FRONTEND_URL}
+        depends_on:
+            - db
+        links:
+            - "db:db"
+        build:
+            context: ./
+            dockerfile: ./backend/Dockerfile
+        image: "express_backend:latest"
+        ports:
+            - "8080:8080"
+    db:
+        image: "postgres:14"
+        environment:
+            POSTGRES_USER: postgres
+            POSTGRES_PASSWORD: postgres
+            POSTGRES_DB: bidcast
+        ports:
+            - "8432:5432"
+        volumes:
+            - ./pgdata:/var/lib/postgresql/data
+    ionsfu:
+        build:
+            context: ./
+            dockerfile: ./ion-sfu/Dockerfile
+        image: "ionsfu:latest"
+        ports:
+            - "7000:7000"
+    telegram:
+        build:
+            context: ./
+            dockerfile: ./telegram/Dockerfile
+        image: "telegram:latest"
+        ports:
+            - "9000:9000"

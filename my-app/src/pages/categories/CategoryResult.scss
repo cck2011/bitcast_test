@@ -1,0 +1,49 @@
+@import "~bootstrap/scss/bootstrap";
+
+.image_column {
+    display: flex;
+    justify-content: flex-end;
+}
+.category_page {
+    background-color: #f0f0f0;
+    min-height: var(--contentMinHeight);
+}
+
+.button_group {
+    display: flex;
+    align-items: center;
+}
+.filter_icon {
+    margin-right: 10px;
+}
+.category_items_container {
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+}
+.description_container {
+    margin-left: 20px;
+    width: 50%;
+}
+.img-fluid {
+    max-height: 200px;
+}
+.products_description {
+    width: 70%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.products_description:hover {
+    text-overflow: clip;
+    width: auto;
+    white-space: normal;
+}
+.category_img_container {
+    display: flex;
+    justify-content: center;
+}
+.product_name_link {
+    text-decoration: none;
+    color: #000000;
+}

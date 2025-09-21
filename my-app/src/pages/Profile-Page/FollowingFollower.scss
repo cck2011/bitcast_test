@@ -1,0 +1,23 @@
+.livestreamLogin {
+    height: 135px;
+    background: radial-gradient(
+        circle,
+        rgba(236, 233, 230, 1) 0%,
+        rgba(255, 255, 255, 1) 100%
+    );
+    font-size: 1.2em;
+}
+
+.subscribe_btn:focus {
+    box-shadow: none !important;
+}
+
+.follower,
+.following {
+    font-size: 1.5rem;
+    font-family: "Noto Sans TC", sans-serif;
+    padding-left: 0.5rem;
+    .card_body {
+        height: 100%;
+    }
+}

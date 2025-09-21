@@ -1,0 +1,349 @@
+.formTitleLink {
+ 
+  color: #707c8b;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.7em;
+  margin: 0 10px;
+  padding-bottom: 5px;
+}
+
+.formTitleLink:first-child {
+  margin-left: 0;
+}
+.formTitle {
+  color: #707c8b;
+  font-weight: 300;
+  margin-bottom: 50px;
+  display:flex;
+  justify-content:center
+}
+.formTitle2 {
+  color: #707c8b;
+  font-weight: 300;
+  margin-bottom: 50px;
+  
+}
+.formTitleLink-active {
+  
+  color: black;
+  border-bottom: 1px solid #6b5b95;
+  transition:transform 300ms;
+  transform: translateY(-20%)
+}
+
+@media only screen and (max-width: 900px) {
+  .appAside {
+    display:none !important;
+  }
+  .appForm{
+    width: 100% !important;
+    background-color: white;
+    padding: 25px 40px;
+    overflow: auto;
+  }
+  
+}
+@media only screen and (max-width: 500px) {
+  .formTitle {
+    
+    color: #707c8b;
+  font-weight: 300;
+  margin-bottom: 50px;
+  display:flex;
+  flex-direction: column;
+  max-width:173px;
+  }
+  .fbcss{
+    background-color: white;
+    border:0px;
+    padding: 0px !important;
+    margin-right:6px;
+    margin-bottom: 5px;
+  }
+}
+@media screen and (min-width:1600px){
+  .fakeapp {
+    ::placeholder { 
+      color: black;
+      opacity: 1; 
+    }
+    display: flex !important;
+    justify-content:center !important;
+    background-image: url("./10.jpg") !important;
+    // background-size: auto auto;
+    background-position: top top !important;
+    // background-attachment: fixed;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    height:100vh !important;
+  }
+}
+
+body
+{
+   min-width: 330px;
+   
+}
+.fakeapp {
+  
+  display: flex;
+  justify-content:center;
+  background-image: url("./city.jpeg");
+  // background-size: auto auto;
+  background-position: center top;
+  // background-attachment: fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  height:100vh;
+}
+.appAside {
+  width: 70%;
+  background-color: white;
+  
+}
+
+.appForm {
+  padding-top: 120px !important;
+  width: 50%;
+  background-color:#ffffff80;
+  padding: 25px 40px;
+  overflow: auto;
+  height: auto;
+}
+.formCenter {
+  margin-bottom: 100px;
+}
+.formField {
+  margin-bottom: 40px;
+}
+.formFieldLabel {
+  display: block;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: #1E2833;
+}
+.formFieldButton {
+  background-color: #696969;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 25px;
+  padding: 15px 70px;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+.formFieldInput {
+  width: 85%;
+  background-color: transparent;
+  border: none;
+  color: black;
+  outline: none;
+  border-bottom: 1px solid #445366;
+  font-size: 1em;
+  font-weight: 300;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+.smallpic{
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: bottom;
+}
+.remove-btn {
+  margin-right: 0.5rem;
+}
+
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transition: opacity 2000ms;
+}
+.my-node-exit {
+  opacity: 0;
+}
+// .my-node-exit-active {
+//   opacity: 0;
+//   transition: opacity 0ms;
+// }
+
+.fade-enter{
+  opacity: 0;
+  transform: translateX(-100%);
+}
+.fade-enter-active{
+  opacity: 1;
+  transform: translateX(0%);
+}
+.fade-exit{
+  opacity: 1;
+  transform: translateX(0%);
+}
+// .fade-exit-active{
+//   opacity: 0;
+//   transform: translateX(100%);
+// }
+.fade-enter-active
+// .fade-exit-active{
+//   transition: opacity 2000ms, transform 2000ms;
+// }
+.slide-enter,
+.slide-exit {
+  transition: transform 1000ms ease-out;
+}
+
+.slide-enter {
+  transform: translateX(10%);
+}
+
+.slide-enter.slide-enter-active {
+  transform: translateX(0%);
+}
+
+.slide-exit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: translateX(0%);
+}
+
+// .slide-exit-active {
+//   transform: translateX(-100%);
+// }
+
+
+.flex-icon1{
+  display:flex;
+  align-items:center;
+  padding: 0px !important;;
+  width:172px;
+  height:50px;
+  background-color: white;
+  border-radius: 2px;
+  font-size:13px;
+  box-shadow: rgb(0 0 0 / 24%) 0px 2px 2px 0px, rgb(0 0 0 / 24%) 0px 0px 1px 0px;
+  color: rgba(0, 0, 0, 0.54);
+  
+}
+.fbcss{
+  background-color: white;
+  border:0px;
+  padding: 0px !important;
+  margin-right:6px;
+}
+.rightMargin{
+  margin-right: 15px;
+  margin-left:5px;
+  color:blue
+}
+.vividworknav1 {
+  // max-width: 100%;
+  height: auto;
+  float: left;
+  padding: 0;
+  position: relative;
+  background-color: black;
+}
+.vividworknav2 {
+  max-width: 100%;
+  height: auto;
+  float: left;
+  padding: 0;
+  position: relative;
+  background-color: black;
+}
+.vividworknav3 {
+  max-width: 100%;
+  height: auto;
+  float: left;
+  padding: 0;
+  position: relative;
+  background-color: black;
+}
+
+.vividworknav1:hover img {
+  opacity: 0.3;
+}
+.vividworknav2:hover img {
+  opacity: 0.3;
+}
+.vividworknav3:hover img {
+  opacity: 0.3;
+}
+
+.vividworknav1:hover .work-text-content {
+  opacity: 1; 
+}
+.vividworknav2:hover .work-text-content {
+  opacity: 1; 
+}
+.vividworknav3:hover .work-text-content {
+  opacity: 1; 
+}
+
+.vividworknav1 img {
+  padding: 0;
+  width: 100%;
+  display: block;
+  opacity: 1;
+}
+.vividworknav2 img {
+  padding: 0;
+  width: 100%;
+  display: block;
+  opacity: 1;
+}
+.vividworknav3 img {
+  padding: 0;
+  width: 100%;
+  display: block;
+  opacity: 1;
+}
+
+.vividworknav1 img,
+.work-text-content {
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+
+.vividworknav2 img,
+.work-text-content {
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+
+.vividworknav3 img,
+.work-text-content {
+  -webkit-transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
+}
+.work-text-content {
+  position: absolute;
+  color: white;
+  left: 0;
+  top: 50%;
+  right: 0;
+  bottom: 0;
+  font-size: 24px;
+  text-align: center;
+  opacity: 0;
+}
+
+.toast{
+  max-width:75% !important;
+  margin-left:110px;
+}
+
+
+
+@import "~bootstrap/scss/bootstrap";

@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/static/css/main.76ec6975.chunk.css",
+    "main.js": "/static/js/main.6e749f7e.chunk.js",
+    "main.js.map": "/static/js/main.6e749f7e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.370796e3.js",
+    "runtime-main.js.map": "/static/js/runtime-main.370796e3.js.map",
+    "static/css/2.9b895741.chunk.css": "/static/css/2.9b895741.chunk.css",
+    "static/js/2.d37e28a6.chunk.js": "/static/js/2.d37e28a6.chunk.js",
+    "static/js/2.d37e28a6.chunk.js.map": "/static/js/2.d37e28a6.chunk.js.map",
+    "static/js/3.a82a8172.chunk.js": "/static/js/3.a82a8172.chunk.js",
+    "static/js/3.a82a8172.chunk.js.map": "/static/js/3.a82a8172.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.9b895741.chunk.css.map": "/static/css/2.9b895741.chunk.css.map",
+    "static/css/main.76ec6975.chunk.css.map": "/static/css/main.76ec6975.chunk.css.map",
+    "static/js/2.d37e28a6.chunk.js.LICENSE.txt": "/static/js/2.d37e28a6.chunk.js.LICENSE.txt",
+    "static/js/main.6e749f7e.chunk.js.LICENSE.txt": "/static/js/main.6e749f7e.chunk.js.LICENSE.txt",
+    "static/media/Login.scss": "/static/media/city.c0a3532d.jpeg",
+    "static/media/arrow.396f089c.png": "/static/media/arrow.396f089c.png",
+    "static/media/bidcastQR.fadd6ee8.svg": "/static/media/bidcastQR.fadd6ee8.svg",
+    "static/media/bidcast_logo.78770b8f.svg": "/static/media/bidcast_logo.78770b8f.svg",
+    "static/media/categories_blue.1b1000e4.png": "/static/media/categories_blue.1b1000e4.png",
+    "static/media/categories_green.1d150b14.png": "/static/media/categories_green.1d150b14.png",
+    "static/media/categories_red.7ac67884.png": "/static/media/categories_red.7ac67884.png",
+    "static/media/categories_yellow.e9d304e7.png": "/static/media/categories_yellow.e9d304e7.png",
+    "static/media/all.css": "/static/media/fa-solid-900.eeccf4f6.woff",
+    "static/media/AccountDetails.scss": "/static/media/pngegg.a26a4340.png",
+    "static/media/product01.45aff63b.png": "/static/media/product01.45aff63b.png",
+    "static/media/styles.css": "/static/media/revicons.e8746a62.woff",
+    "static/media/start.7dbbc8cb.png": "/static/media/start.7dbbc8cb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.370796e3.js",
+    "static/css/2.9b895741.chunk.css",
+    "static/js/2.d37e28a6.chunk.js",
+    "static/css/main.76ec6975.chunk.css",
+    "static/js/main.6e749f7e.chunk.js"
+  ]
+}
